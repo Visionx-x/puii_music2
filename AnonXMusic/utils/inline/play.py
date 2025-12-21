@@ -73,7 +73,7 @@ def stream_markup_timer(_, videoid, user_id, chat_id, played, dur):
             ),
             InlineKeyboardButton(
                 text="➕ Add Me",
-                url=f"https://t.me/{app.username}?startgroup=true"
+                url=f"https://t.me/Rose_MusicsBot?startgroup=true"
             )
         ],
     ]
@@ -95,7 +95,7 @@ def stream_markup(_, videoid, user_id, chat_id):
             ),
             InlineKeyboardButton(
                 text="➕ Add Me",
-                url=f"https://t.me/{app.username}?startgroup=true"
+                url=f"https://t.me/Rose_MusicsBot?startgroup=true"
             )
         ],
     ]
