@@ -87,6 +87,9 @@ def help_pannel(_, is_sudo, START: Union[bool, int] = None):
             ]
         ]
 
+    return InlineKeyboardMarkup(upl)
+
+
 def help_back_markup(_):
     upl = InlineKeyboardMarkup(
         [
