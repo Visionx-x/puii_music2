@@ -66,6 +66,9 @@ def stream_markup_timer(_, chat_id, played, dur):
             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
+        [
+            InlineKeyboardButton(text="➕ Add Me", url="https://t.me/Rose_MusicsBot?startgroup=true")
+        ],
     ]
     
     return buttons
@@ -81,14 +84,7 @@ def stream_markup(_, chat_id):
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
         [
-            InlineKeyboardButton(
-                text=_["CLOSE_BUTTON"],
-                callback_data=f"forceclose {videoid}|{user_id}",
-            ),
-            InlineKeyboardButton(
-                text="➕ Add Me",
-                url=f"https://t.me/Rose_MusicsBot?startgroup=true"
-            )
+            InlineKeyboardButton(text="➕ Add Me", url="https://t.me/Rose_MusicsBot?startgroup=true")
         ],
     ]
     return buttons
@@ -111,10 +107,6 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
                 text=_["CLOSE_BUTTON"],
                 callback_data=f"forceclose {videoid}|{user_id}",
             ),
-            InlineKeyboardButton(
-                text="➕ Add Me",
-                url=f"https://t.me/Rose_MusicsBot?startgroup=true"
-            )
         ],
     ]
     return buttons
