@@ -20,10 +20,10 @@ YT_API_KEY = getenv("YT_API_KEY" , '1a873582a7c83342f961xx0a177b2b26' ) ## Your 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 300))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID"))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1002190240045"))
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID"))
+OWNER_ID = int(getenv("OWNER_ID", 5016109398‎))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
