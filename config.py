@@ -6,15 +6,11 @@ from pyrogram import filters
 
 load_dotenv()
 
-# Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID","32454937"))
+API_HASH = getenv("API_HASH", "37a437e0f30a30be282b33d554abcc0e")
+BOT_TOKEN = getenv("BOT_TOKEN", "8070550307:AAFLGVyWFT09rz9wpTt-hM_k5TVnUkh8_SI")
 
-# Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
-
-# Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://Visionbot:Killedon_rose_music@visionbot.bhbwcls.mongodb.net/?appName=Visionbot")
 
 # Vars For API End Pont.
 YTPROXY_URL = getenv("YTPROXY_URL", 'http://213.199.39.92:1470') ## xBit Music Endpoint.
@@ -74,7 +70,8 @@ CACHE_SLEEP = int(getenv("CACHE_SLEEP" , "3600"))   #60*60
 
 
 # Get your pyrogram v2 session from @StringFatherBot on Telegram
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BQGTf-MAIRhhkEcqdgNsYeeKWG8pY5jTUsSlymXpn2V9MVjQ-FbT2Vy99msiVf2YPN2BkyOQp0CDtbRQpwK8QP1s00HpvQnOqCK4hjofZ6MofUKJtp8awcY4A2CxJPn2l4mc8QqzgwYqfPsn-IUHvyHHdGCVcyU3VxFI5bUvXTgau0-8AiyqqWUFEoInNPLvY4F0S3-0rXJhOi6T98LJ48gqRde9flzhj-Lalgao0cdFV3BzWmQ9trwWZK4g77L4fqBHBxxXcXJyFV_K_0vDk1IW6zBiaidAl7T6ZJOke-CpfVOQbB6LvrAKFhhib8KJGuRt32L2DRh1xjIgXZip0I-eznFL1QAAAAG45QtYAA
+API_KEY=NxGBNexGenBots624d4f")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
