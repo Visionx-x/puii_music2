@@ -6,11 +6,15 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID","32454937"))
-API_HASH = getenv("API_HASH", "37a437e0f30a30be282b33d554abcc0e")
-BOT_TOKEN = getenv("BOT_TOKEN", "8070550307:AAFLGVyWFT09rz9wpTt-hM_k5TVnUkh8_SI")
+# Get this value from my.telegram.org/apps
+API_ID = int(getenv("API_ID", "29374372"))
+API_HASH = getenv("API_HASH", "6d99ebdb1e703ccd8a873958097ce5d3")
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://Visionbot:Killedon_rose_music@visionbot.bhbwcls.mongodb.net/?appName=Visionbot")
+# Get your token from @BotFather on Telegram.
+BOT_TOKEN = getenv("BOT_TOKEN", "8437872483:AAGrsG8Ly3zvj7rQjrbX1IUD-g2_q5hP8nM")
+
+# Get your mongo url from cloud.mongodb.com
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://karishmaid_Dream_Music:karishmaid_Dream_Music@cluster0.ib4dp6j.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 # Vars For API End Pont.
 YTPROXY_URL = getenv("YTPROXY_URL", 'http://213.199.39.92:1470') ## xBit Music Endpoint.
@@ -19,11 +23,13 @@ YT_API_KEY = getenv("YT_API_KEY" , '1a873582a7c83342f961xx0a177b2b26' ) ## Your 
 ## Other vaes
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 999))
 
-# Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", "-1002190240045"))
 
-# Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", "5016109398"))
+# Chat id of a group for logging bot's activities
+LOGGER_ID = int(getenv("LOGGER_ID", -1001861619812))
+
+# Get this value from @MissRose_Bot on Telegram by /id
+OWNER_ID = int(getenv("OWNER_ID", 5016109398))
+
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -70,7 +76,7 @@ CACHE_SLEEP = int(getenv("CACHE_SLEEP" , "3600"))   #60*60
 
 
 # Get your pyrogram v2 session from @StringFatherBot on Telegram
-STRING1 = getenv("STRING_SESSION", "BQGTf-MAIRhhkEcqdgNsYeeKWG8pY5jTUsSlymXpn2V9MVjQ-FbT2Vy99msiVf2YPN2BkyOQp0CDtbRQpwK8QP1s00HpvQnOqCK4hjofZ6MofUKJtp8awcY4A2CxJPn2l4mc8QqzgwYqfPsn-IUHvyHHdGCVcyU3VxFI5bUvXTgau0-8AiyqqWUFEoInNPLvY4F0S3-0rXJhOi6T98LJ48gqRde9flzhj-Lalgao0cdFV3BzWmQ9trwWZK4g77L4fqBHBxxXcXJyFV_K_0vDk1IW6zBiaidAl7T6ZJOke-CpfVOQbB6LvrAKFhhib8KJGuRt32L2DRh1xjIgXZip0I-eznFL1QAAAAG45QtYAA")
+STRING1 = getenv("STRING_SESSION", "BQGxLs8AGPDpt1R_DwgknUgEjByrDOTBZBLENeuL1DkYoZ9Q9MYirwfmY6gtfaNlABByyX5jEOKCJfnDXciJjP6Bwi63GpqwuSmAjtRq6ZBdZAhHoH8wV7HWJy98FFbPP4u8_HMf51OHNqTVK9Cy_gH35rCRtAfMuWqik0rm8pwBvQbdmJTpPn6CzK4ssipcxVDSQrZSnc2GLv6Z5FdXU_jT5Y2Sa1cF6Z6KF0SgZKsHk-oX1imTqNnnfWSQFBMkba4rl1VNhdsCzPCAijma5_L_t8rc_1e0PWpqeH1vo1yqyEDXQ-OQkoLEyJzEJXfUlVcfQ0L35GCF9k-DOOuLsTYu0i-t1QAAAAFtwWkQAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -86,26 +92,23 @@ confirmer = {}
 file_cache: dict[str, float] = {}
 
 START_IMG_URL = [
-    "https://files.catbox.moe/zmfwcm.jpg",
-    "https://files.catbox.moe/zmfwcm.jpg",
-    "https://files.catbox.moe/zmfwcm.jpg"
+    "https://files.catbox.moe/b8fo5g.jpg",
+    "https://files.catbox.moe/b8fo5g.jpg"
 ]
 
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://files.catbox.moe/zmfwcm.jpg"
+    "PING_IMG_URL", "https://files.catbox.moe/b8fo5g.jpg"
 )
-
-PLAYLIST_IMG_URL = "https://files.catbox.moe/zmfwcm.jpg"
-STATS_IMG_URL = "https://files.catbox.moe/zmfwcm.jpg"
-TELEGRAM_AUDIO_URL = "https://files.catbox.moe/zmfwcm.jpg"
-TELEGRAM_VIDEO_URL = "https://files.catbox.moe/zmfwcm.jpg"
-STREAM_IMG_URL = "https://files.catbox.moe/zmfwcm.jpg"
-SOUNCLOUD_IMG_URL = "https://files.catbox.moe/zmfwcm.jpg"
-YOUTUBE_IMG_URL = "https://files.catbox.moe/zmfwcm.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/zmfwcm.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/zmfwcm.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/zmfwcm.jpg"
-
+PLAYLIST_IMG_URL = "https://files.catbox.moe/b8fo5g.jpg"
+STATS_IMG_URL = "https://files.catbox.moe/b8fo5g.jpg"
+TELEGRAM_AUDIO_URL = "https://files.catbox.moe/b8fo5g.jpg"
+TELEGRAM_VIDEO_URL = "https://files.catbox.moe/b8fo5g.jpg"
+STREAM_IMG_URL = "https://files.catbox.moe/b8fo5g.jpg"
+SOUNCLOUD_IMG_URL = "https://files.catbox.moe/b8fo5g.jpg"
+YOUTUBE_IMG_URL = "https://files.catbox.moe/b8fo5g.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/b8fo5g.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/b8fo5g.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/b8fo5g.jpg"
 
 
 

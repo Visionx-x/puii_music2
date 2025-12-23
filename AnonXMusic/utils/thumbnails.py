@@ -1,25 +1,11 @@
 import os
 import re
-import asyncio
-import aiofiles
-import aiohttp
-import numpy as np
-from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
-from unidecode import unidecode
-from ytSearch import VideosSearch
-
-from AnonXMusic import app, LOGGER
-from config import YOUTUBE_IMG_URL
-
-
-import os
-import re
 
 import aiofiles
 import aiohttp
 from PIL import Image, ImageDraw, ImageOps, ImageFilter
 from unidecode import unidecode
-from youtubesearchpython.__future__ import VideosSearch
+from ytSearch import VideosSearch
 
 from AnonXMusic import app
 from config import YOUTUBE_IMG_URL
