@@ -21,8 +21,8 @@ from AnonXMusic.utils.formatters import time_to_seconds
 logger = LOGGER(__name__)
 
 # --- Custom API Configuration ---
-CUSTOM_API_URL = "http://213.199.39.92:1470"
-CUSTOM_API_KEY = "1a873582a7c83342f961xx0a177b2b26"
+CUSTOM_API_URL = "https://api2.nexgenbots.xyz"
+CUSTOM_API_KEY = "NxGBNexGenBots624d4f"
 
 def cookie_txt_file():
     try:

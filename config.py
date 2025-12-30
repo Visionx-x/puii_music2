@@ -6,24 +6,23 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID","22808315"))
-API_HASH = getenv("API_HASH", "1c258916b658a030a9a849ef2aad2372")
-BOT_TOKEN = getenv("BOT_TOKEN", "8059874059:AAFPD8VkD-jnnTJhdwddzVJKf_CHP0PACwg")
+# Get this value from my.telegram.org/apps
+API_ID = int(getenv("API_ID", 21510703))
+API_HASH = getenv("API_HASH", "3c2252c18547bc9510ae24e6a96f76f4")
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://telegrambott19:telegrambott19@cluster0.zuqkmiu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+# Get your token from @BotFather on Telegram.
+BOT_TOKEN = getenv("BOT_TOKEN", "7800637425:AAH-3-zxmtXH-Ln_DhuQG4JLX0P2Vxxg64c")
 
-# Vars For API End Pont.
-YTPROXY_URL = getenv("YTPROXY_URL", 'http://213.199.39.92:1470') ## xBit Music Endpoint.
-YT_API_KEY = getenv("YT_API_KEY" , '1a873582a7c83342f961xx0a177b2b26' ) ## Your API key like: xbit_10000000xx0233 Get from  https://t.me/tgmusic_apibot
+# Get your mongo url from cloud.mongodb.com
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://demi:demi@cluster0.ifbehpt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
-## Other vaes
-DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 999))
+DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 180))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", -1002881359859)) 
+LOGGER_ID = int(getenv("LOGGER_ID", -1002190240045))
 
 # Get this value from @MissRose_Bot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 5016109398))
+OWNER_ID = int(getenv("OWNER_ID", 890275081))
 
 
 ## Fill these variables if you're deploying on heroku.
@@ -41,8 +40,8 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/learning_bots")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/LearningBotsCommunity")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -71,7 +70,7 @@ CACHE_SLEEP = int(getenv("CACHE_SLEEP" , "3600"))   #60*60
 
 
 # Get your pyrogram v2 session from @StringFatherBot on Telegram
-STRING1 = getenv("STRING_SESSION", "BQFcBvsAm4uur07UIEg04vzP6Hxc3smGl_ZjRQl7yTqCzEFYLkDfS6c8lWrnVux1MtOLhTxm10gAX-gm1jbc_I7vixn1PZLBJeOWPh2MIjshRK6Z6v8ltasELMXWY3hCtz8p1K7ZVTi7tApalbnk4SLi0paulg51jENoaXRJaC64ERcZ3YxHiqsni0xBR8adPbaUuXqyZiWN6EDnEYSOJHD7_dLEJDKELW599yNA0DEm0Oj1O47VZWIxrGIc7Qk3KxPfkkF-ldOrptDGhcDmiNmTTioLEsS4uP6mlcPVJHTFuNn6_QoCKcS45km93DSl8jPPgkoHnUZbIeof6sxs99CPRf9pfwAAAAFyKerMAA")
+STRING1 = getenv("STRING_SESSION", "BQFIOi8AxKdh35ywZCTO2W0yisXlhozUhsMcbgQXcoZylC2iLW4p2K_ZtJXoO6Ka55os9f5gzJIFXy6BPwxMivMr0Iu06wVtUoHpbOM1onpUBNKb7NImYemSVsZXC3IMjvkZimfiYRHn-nEK4JS9q0OBWuU0ET4s2pGVRbKWcpNyL2IyWL5AdO_Dabo3bkoVoGe3e2s9xj4qT8fQdF8v9PfQwhxaVSuRLJgWaFixl0qZr5MHQSOap4-aWX5fUMN7g8KgDf2Z9HfFSVRDKstc3Okn5Sq9bMISvXzUSERKlRrQDbx-L4U_pxMN5iiu3liIVR6Cpguo6NnWXDC_2AKm0ReYsclkdQAAAAHnGcHgAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -86,25 +85,24 @@ autoclean = []
 confirmer = {}
 file_cache: dict[str, float] = {}
 
-START_IMG_URL = [
-    "https://files.catbox.moe/ukjrvh.jpg",
-    "https://files.catbox.moe/ukjrvh.jpg"
+START_IMG_URL = ["https://files.catbox.moe/r8q8o0.jpg",
+                 "https://files.catbox.moe/r8q8o0.jpg"
 ]
-
+    
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://files.catbox.moe/ukjrvh.jpg"
+    "PING_IMG_URL", "https://files.catbox.moe/r8q8o0.jpg"
 )
+PLAYLIST_IMG_URL = "https://files.catbox.moe/r8q8o0.jpg"
+STATS_IMG_URL = "https://files.catbox.moe/r8q8o0.jpg"
+TELEGRAM_AUDIO_URL = "https://files.catbox.moe/r8q8o0.jpg"
+TELEGRAM_VIDEO_URL = "https://files.catbox.moe/r8q8o0.jpg"
+STREAM_IMG_URL = "https://files.catbox.moe/r8q8o0.jpg"
+SOUNCLOUD_IMG_URL = "https://files.catbox.moe/r8q8o0.jpg"
+YOUTUBE_IMG_URL = "https://files.catbox.moe/r8q8o0.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/r8q8o0.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/r8q8o0.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/r8q8o0.jpg"
 
-PLAYLIST_IMG_URL = "https://files.catbox.moe/ukjrvh.jpg"
-STATS_IMG_URL = "https://files.catbox.moe/ukjrvh.jpg"
-TELEGRAM_AUDIO_URL = "https://files.catbox.moe/ukjrvh.jpg"
-TELEGRAM_VIDEO_URL = "https://files.catbox.moe/ukjrvh.jpg"
-STREAM_IMG_URL = "https://files.catbox.moe/ukjrvh.jpg"
-SOUNCLOUD_IMG_URL = "https://files.catbox.moe/ukjrvh.jpg"
-YOUTUBE_IMG_URL = "https://files.catbox.moe/ukjrvh.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/ukjrvh.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/ukjrvh.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/ukjrvh.jpg"
 
 
 
